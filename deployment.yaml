@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ud-ms-api-user
+  labels:
+    app: ud-ms-api-user
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ud-ms-api-user
+  template:
+    metadata:
+      labels:
+        app: ud-ms-api-user
+    spec:
+      containers:
+      - name: api-user
+        image: sammysium/api_user
+        ports:
+        - containerPort: 8080
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 8080
+          initialDelaySeconds: 3
+          periodSeconds: 3
