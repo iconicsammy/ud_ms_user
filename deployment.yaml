@@ -19,6 +19,17 @@ spec:
         image: sammysium/api_user
         ports:
         - containerPort: 8080
+        env:
+          - name: username
+            value: semira
+          - name: password
+            value: semira503
+          - name: database
+            value: postgres
+          - name: host
+            value: udmsdb.crew3keyvyxp.us-east-2.rds.amazonaws.com
+          - name: dialect
+            value: postgres
         livenessProbe:
           httpGet:
             path: /health
