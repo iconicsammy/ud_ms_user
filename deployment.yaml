@@ -17,6 +17,7 @@ spec:
       containers:
       - name: api-user
         image: sammysium/api_user
+      - alwaysPull: true
         ports:
         - containerPort: 8080
         env:
