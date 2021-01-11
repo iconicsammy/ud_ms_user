@@ -5,6 +5,9 @@ node_js:
 services:
   - docker
 
+env:
+  - username=semira
+
 # pre-testing installs
 install:
   - echo "nothing nees to be installed"
