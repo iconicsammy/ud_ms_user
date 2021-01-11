@@ -42,3 +42,4 @@ venv/
 !.elasticbeanstalk/*.global.yml
 env.list
 set_env.sh
+secrets.yaml

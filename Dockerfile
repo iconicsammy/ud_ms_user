@@ -13,8 +13,6 @@ ADD . .
 
 EXPOSE 8080
 
-ENV username=semira
-
 RUN npm run build
 
 CMD [ "node", "./www/server.js" ]

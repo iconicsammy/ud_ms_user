@@ -1,3 +1,4 @@
 node_modules
 env.list
 set_env.sh
+secrets.yaml
