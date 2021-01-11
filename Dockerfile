@@ -11,7 +11,7 @@ RUN npm install
 
 ADD . .
 
-EXPOSE 8071
+EXPOSE 8080
 
 RUN npm run build
 
